@@ -1,11 +1,10 @@
 # Activity 13: Mérida Homes — Taming Overfitting with Regularization
 ## Sessions 23
 ## Due date (mm/dd/yyyy): 10/18/2026
+## Adriana Rosales González
 ## Delivery Format: [] Video URL | [X] Markdown file | [] Jupyter Notebook file
 
 ---
-
-# Activity Description
 
 ## The Story
 
@@ -19,24 +18,7 @@ That combination — a small training set and several irrelevant features — is
 causes a linear regression model to **overfit**: fitting noise in the training data instead of
 the real underlying pattern. **Regularization** is how you fix that.
 
-This activity covers Session 23 in one app. Just like Activity 12, you can freely explore in a
-**Playground** — but every graded question is based on a separate, fixed **Canonical Model**.
-
-**App link:** https://uam-aiclass-a13.streamlit.app/
-
-If you'd rather run it on your own machine instead of using the shared link, see
-**Running It Yourself** below.
-
-### The App
-
-Three tabs:
-
-1. **📊 The Overfitting Problem** — the unregularized model's coefficients (color-coded: blue
-   for the 4 real features, red for the 4 noise features) and its train-vs-test R² gap.
-2. **🎯 Ridge (L2)** — a live λ slider showing how Ridge shrinks every coefficient smoothly,
-   plus a fixed Canonical Ridge Model.
-3. **🎯 Lasso (L1)** — a live λ slider showing how Lasso can drive coefficients to *exactly*
-   zero, plus a fixed Canonical Lasso Model and a live "features zeroed out" counter.
+--- 
 
 ### Your Tasks
 
@@ -55,18 +37,30 @@ Three tabs:
 5. **Record the Canonical Lasso Model's coefficients, train R², test R², and which features got
    zeroed out.** Take a screenshot.
 
+
+--- 
 6. **Fill out `A13_ReflectionQuestions.md`**, using the exact numbers from your Canonical Model
    screenshots, and submit it along with your labeled screenshots.
 
-### Running It Yourself (optional)
+---
+# Activity 13 — Reflection Questions: Regularization at Mérida Homes
+1. For the **plain (unregularized) model**, report the train R², the test R², and the exact gap between them.
 
-```bash
-conda activate ai_uam
-cd Activity13
-pip install -r requirements.txt
-streamlit run app.py
-```
+2. Report all 8 coefficients of the **Canonical Ridge Model**.
 
+3. Report the **Canonical Ridge Model's** train R² and test R². Is the test R² better or worse than the plain model's test R² from Question 1?
+
+4. Report all 8 coefficients of the **Canonical Lasso Model**, and name exactly which feature(s) were driven to zero.
+
+5. Report the **Canonical Lasso Model's** train R² and test R².
+
+6. In your own words, explain the key difference between how **Ridge** and **Lasso** treat coefficients as λ grows, based on what you saw in the bar charts.
+
+7. True or False: increasing λ always improves test R². Justify your answer using your own playground exploration (report at least one λ value where this was NOT the case).
+
+8. Name one **real business or IT scenario** (other than house pricing) where you'd worry about a model overfitting due to too many irrelevant features. Which regularization type (L1 or L2) would you reach for first, and why?
+
+--- 
 # References:
 - [Streamlit documentation](https://docs.streamlit.io/)
 - [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
