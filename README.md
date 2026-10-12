@@ -22,20 +22,31 @@ the real underlying pattern. **Regularization** is how you fix that.
 
 ### Your Tasks
 
-1. **In the Overfitting Problem tab**, note the train R² vs. test R² gap for the plain
-   (unregularized) model. Take a screenshot.
+1. **In the Overfitting Problem tab**, note the train R² vs. test R² gap for the plain (unregularized) model. Take a screenshot.
+<img width="608" height="635" alt="image" src="https://github.com/user-attachments/assets/1d6682d0-a9e4-4531-9add-63518dbdc077" />
 
-2. **In the Ridge tab, try at least 3 different λ values in the playground.** Watch how the red
-   (noise) bars behave differently from the blue (real) bars as λ grows. Take a screenshot at a
-   large λ (e.g. 1.0+).
 
-3. **In the Lasso tab, try at least 3 different λ values**, and find one where at least 2
-   features get zeroed out while all 4 real features are still nonzero. Take a screenshot.
+2. **In the Ridge tab, try at least 3 different λ values in the playground.** Watch how the red (noise) bars behave differently from the blue (real) bars as λ grows. Take a screenshot at a large λ (e.g. 1.0+).
+
+   - Value: 0.1
+  <img width="626" height="535" alt="image" src="https://github.com/user-attachments/assets/30925396-ebe9-48c1-b887-11417c37354d" />
+
+   - Value: 0.7
+  <img width="619" height="535" alt="image" src="https://github.com/user-attachments/assets/66f25eae-5d29-4c20-89cf-b5ae55fab02c" />
+
+
+   - Value: 1.15
+  <img width="631" height="521" alt="image" src="https://github.com/user-attachments/assets/f2e03e7e-4e96-4fd0-81c9-26657ba77b45" />
+
+    - Canonical Ridge Model Values: Train R² = 0.9861 & Test R² = 0.8926
+  <img width="614" height="489" alt="image" src="https://github.com/user-attachments/assets/94ae7765-be40-46ff-9f68-63ad86adbb3c" />
+
+
+3. **In the Lasso tab, try at least 3 different λ values**, and find one where at least 2 features get zeroed out while all 4 real features are still nonzero. Take a screenshot.
 
 4. **Record the Canonical Ridge Model's coefficients, train R², and test R².** Take a screenshot.
 
-5. **Record the Canonical Lasso Model's coefficients, train R², test R², and which features got
-   zeroed out.** Take a screenshot.
+5. **Record the Canonical Lasso Model's coefficients, train R², test R², and which features got  zeroed out.** Take a screenshot.
 
 
 --- 
