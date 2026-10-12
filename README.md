@@ -22,11 +22,11 @@ the real underlying pattern. **Regularization** is how you fix that.
 
 ### Your Tasks
 
-1. **In the Overfitting Problem tab**, note the train R² vs. test R² gap for the plain (unregularized) model. Take a screenshot.
+**1. **In the Overfitting Problem tab**, note the train R² vs. test R² gap for the plain (unregularized) model. Take a screenshot.**
 <img width="608" height="635" alt="image" src="https://github.com/user-attachments/assets/1d6682d0-a9e4-4531-9add-63518dbdc077" />
 
-
-2. **In the Ridge tab, try at least 3 different λ values in the playground.** Watch how the red (noise) bars behave differently from the blue (real) bars as λ grows. Take a screenshot at a large λ (e.g. 1.0+).
+---
+**2. **In the Ridge tab, try at least 3 different λ values in the playground.** Watch how the red (noise) bars behave differently from the blue (real) bars as λ grows. Take a screenshot at a large λ (e.g. 1.0+).**
 
    - Value: 0.1
   <img width="626" height="535" alt="image" src="https://github.com/user-attachments/assets/30925396-ebe9-48c1-b887-11417c37354d" />
@@ -38,22 +38,39 @@ the real underlying pattern. **Regularization** is how you fix that.
    - Value: 1.15
   <img width="631" height="521" alt="image" src="https://github.com/user-attachments/assets/f2e03e7e-4e96-4fd0-81c9-26657ba77b45" />
 
-    - Canonical Ridge Model Values: Train R² = 0.9861 & Test R² = 0.8926
+---
+
+**3. **In the Lasso tab, try at least 3 different λ values**, and find one where at least 2 features get zeroed out while all 4 real features are still nonzero. Take a screenshot.
+**
+  - Value: 5.0
+<img width="617" height="533" alt="image" src="https://github.com/user-attachments/assets/526c312b-de25-42cb-8303-c92ca567007a" />
+
+ - Value: 20.0
+<img width="630" height="544" alt="image" src="https://github.com/user-attachments/assets/3164b9c5-98d5-451d-a602-7792dbae2df4" />
+
+    
+ - Value: 70.0
+<img width="625" height="530" alt="image" src="https://github.com/user-attachments/assets/320939e9-2513-44d2-bc1d-f1053d049aef" />
+
+---
+**4. **Record the Canonical Ridge Model's coefficients, train R², and test R².** Take a screenshot.**
+
+ - Canonical Ridge Model Values: Train R² = 0.9861 & Test R² = 0.8926
+    
   <img width="614" height="489" alt="image" src="https://github.com/user-attachments/assets/94ae7765-be40-46ff-9f68-63ad86adbb3c" />
+---
 
+**5. **Record the Canonical Lasso Model's coefficients, train R², test R², and which features got  zeroed out.** Take a screenshot.**
 
-3. **In the Lasso tab, try at least 3 different λ values**, and find one where at least 2 features get zeroed out while all 4 real features are still nonzero. Take a screenshot.
-
-4. **Record the Canonical Ridge Model's coefficients, train R², and test R².** Take a screenshot.
-
-5. **Record the Canonical Lasso Model's coefficients, train R², test R², and which features got  zeroed out.** Take a screenshot.
+   - Canonical Ridge Model Values: Train R² = 0.9777 ; Test R² = 0.8760 ; Features zeroed out 2 / 8
+   
+<img width="622" height="526" alt="image" src="https://github.com/user-attachments/assets/bb7511f3-8441-4ae3-b976-e14081249cc9" />
 
 
 --- 
 6. **Fill out `A13_ReflectionQuestions.md`**, using the exact numbers from your Canonical Model
    screenshots, and submit it along with your labeled screenshots.
 
----
 # Activity 13 — Reflection Questions: Regularization at Mérida Homes
 1. For the **plain (unregularized) model**, report the train R², the test R², and the exact gap between them.
 
