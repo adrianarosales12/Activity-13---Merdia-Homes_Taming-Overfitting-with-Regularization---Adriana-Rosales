@@ -145,18 +145,18 @@ In the bar charts, Ridge reduced the red bars (noise features) but kept them vis
 **7. True or False: increasing λ always improves test R². Justify your answer using your own playground exploration (report at least one λ value where this was NOT the case).**
 
 - **False.**  
-During playground exploration, when λ was set to 1.15 in Ridge, the **test R² dropped to 0.6367**, which is worse than the plain model. This shows that too much regularization can harm performance by oversimplifying the model.  
+During playground exploration, when λ was set to 1.15 in Ridge, the test R² dropped to 0.6367, which is worse than the plain model. This shows that too much regularization can harm performance by oversimplifying the model.  
 Moderate λ values improve generalization, but excessive λ penalizes useful features too strongly. The key is finding a balance where the model is neither overfitting nor underfitting. Regularization is not about maximizing λ but about tuning it to the right level.
 
 ---
 
 **8. Name one **real business or IT scenario** (other than house pricing) where you'd worry about a model overfitting due to too many irrelevant features. Which regularization type (L1 or L2) would you reach for first, and why?**
-A real-world example is a **customer churn prediction model** in telecommunications. Companies often collect hundreds of variables (e.g., billing details, call durations, customer demographics, marketing campaigns). Many of these features may be irrelevant or redundant.  
+A real-world example is a customer churn prediction model in telecommunications. Companies often collect hundreds of variables (e.g., billing details, call durations, customer demographics, marketing campaigns). Many of these features may be irrelevant or redundant.  
 
 - If too many irrelevant predictors are included, the model risks overfitting, predicting churn based on noise instead of meaningful patterns.  
 - **Preferred regularization:** Lasso (L1), because it can automatically eliminate irrelevant features, leaving only the most predictive ones. This improves interpretability and reduces complexity, which is critical in business decision-making.  
 
-Another example is **fraud detection in banking**, where models may be flooded with irrelevant transaction metadata. Lasso helps focus only on the strongest signals of fraud, while Ridge would keep everything but shrink them. In IT, this distinction matters: Ridge stabilizes models with correlated predictors, while Lasso simplifies models with too many irrelevant variables.
+Another example is frud detection in banking, where models may be flooded with irrelevant transaction metadata. Lasso helps focus only on the strongest signals of fraud, while Ridge would keep everything but shrink them. In IT, this distinction matters: Ridge stabilizes models with correlated predictors, while Lasso simplifies models with too many irrelevant variables.
 
 --- 
 # References:
